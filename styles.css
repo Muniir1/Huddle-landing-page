@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+
+}
+header{
+    font-family: 'Poppins', sans-serif;
+    margin: 3rem auto;
+    width: 90%;
+}
+main{
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+}
+.main_left{
+    width: 60%;
+}
+.main_logo{
+    width: 650px;
+}
+.main_right{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 40%;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    padding: 13px 45px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 2px 0.5px 5px 1px rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.5);
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: rgba(255, 255, 255, 0.5);
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
+a{
+    text-decoration: none;
+}
+
+.footer1, .fa {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.fa {
+    border-radius: 50%;
+    /* overflow: hidden; */
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    color: white;
+}
+.fa:hover{
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+@media screen and (max-width: 400px) {
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        flex-direction: column;
+    }
+    .logo{
+    }
+    .main_logo{
+        width: 300px;
+    }
+    .main_left{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main_right{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-size: 1.4rem;
+    }
+    footer{
+        width: 90%;
+        margin-top: 2rem;
+        margin-left: -6rem;
+    }
+}
