@@ -80,7 +80,7 @@ a{
     color: hsl(300, 69%, 71%);
     border-color: hsl(300, 69%, 71%);
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 475px) {
     body{
         background-image: url(images/bg-mobile.svg);
         background-repeat: no-repeat;
